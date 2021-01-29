@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Qualifications:</h1>
+        <ol id="itemList"></ol>
+    </body>
+    
+    <script>
+        
+        var orderedList = document.getElementById('itemList');
+        var qualifications= new Array('SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil.','PhD');
+        var myElement;
+    
+        function write_letters(){
+    
+            for (i = 0; i < qualifications.length; i++ ) {
+                myElement = document.createElement("li");
+                myElement.innerHTML = qualifications[i];
+                orderedList.appendChild(myElement);
+            }
+        }
+    
+        write_letters();
+        
+    </script>
+</html>
